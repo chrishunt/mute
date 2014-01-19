@@ -8,9 +8,13 @@
 
 ## Usage
 
-`Mute` is here to help you mute and capture standard out or standard error in
-your Ruby programs. This is most useful for testing or cleaning up garbage
-output that we'd rather not see.
+Tired of seeing garbage printed to the screen during your test suite? Would you
+like to prove that your fancy custom Logger is actually working? `Mute` is here
+to help!
+
+`Mute` can be used to mute and capture standard out or standard error in your
+Ruby program. This is most useful in tests where output should be tested, not
+displayed.
 
 To capture standard out:
 
