@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Mute::VERSION
   spec.authors       = ["Chris Hunt"]
   spec.email         = ["c@chrishunt.co"]
-  spec.summary       = %q{Mute}
-  spec.description   = %q{Mute}
+  spec.summary       = %q{Muting test suites since 2014}
+  spec.description   = %q{Muting test suites since 2014}
   spec.homepage      = "https://github.com/chrishunt/mute"
   spec.license       = "MIT"
 
