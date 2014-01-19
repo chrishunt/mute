@@ -42,7 +42,7 @@ puts output
   #=> Oops!
 ```
 
-Or use it in your test suite:
+Use it in your test suite to verify output:
 
 ```ruby
 require 'mute'
@@ -58,6 +58,15 @@ describe MyLogger do
     expect(output).to include message
   end
 end
+```
+
+Or just mute stdout completely for the whole test suite:
+
+```ruby
+# spec/spec_helper.rb
+require 'mute'
+
+Mute::IO.capture_stdout
 ```
 
 ## Installation
