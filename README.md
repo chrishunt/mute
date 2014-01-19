@@ -2,9 +2,9 @@
 [![Coverage Status](https://coveralls.io/repos/chrishunt/mute/badge.png?branch=master)](https://coveralls.io/r/chrishunt/mute)
 [![Code Climate](https://codeclimate.com/github/chrishunt/mute.png)](https://codeclimate.com/github/chrishunt/mute)
 
-![](https://raw2.github.com/chrishunt/mute/master/screenshot.png)
+# Mute
 
-### Mute
+![](https://raw2.github.com/chrishunt/mute/master/screenshot.png)
 
 ## Usage
 
