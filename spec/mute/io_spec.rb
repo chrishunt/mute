@@ -43,8 +43,12 @@ describe Mute::IO do
       expect($stdout).to eq original
     end
 
-    it 'does not require a block' do
-      expect { described_class.capture_stdout }.to_not raise_error
+    it 'captures stdout indefinitely when called without a block' do
+      expect($stdout).to_not receive(:puts)
+
+      described_class.capture_stdout
+
+      puts 'hello'
     end
   end
 

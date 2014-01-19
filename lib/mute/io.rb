@@ -20,7 +20,7 @@ module Mute
 
       captured.string
     ensure
-      eval "$#{stream} = original"
+      eval "$#{stream} = original" if block
     end
   end
 end
