@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "mute"
   spec.version       = Mute::VERSION
   spec.authors       = ["Chris Hunt"]
-  spec.email         = ["chrishunt@github.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["c@chrishunt.co"]
+  spec.summary       = %q{Mute}
+  spec.description   = %q{Mute}
+  spec.homepage      = "https://github.com/chrishunt/mute"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
