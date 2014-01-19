@@ -8,7 +8,53 @@
 
 ## Usage
 
-TODO :)
+`Mute` is here to help you mute and capture standard out or standard error in
+your Ruby programs. This is most useful for testing or cleaning up garbage
+output that we'd rather not see.
+
+To capture standard out:
+
+```ruby
+require 'mute'
+
+output = Mute::IO.capture_stdout do
+  puts 'Hello World!'
+end
+
+puts output
+  #=> Hello World!
+```
+
+To capture standard error:
+
+```ruby
+require 'mute'
+
+output = Mute::IO.capture_stderr do
+  $stderr.puts 'Oops!'
+end
+
+puts output
+  #=> Oops!
+```
+
+Or use it in your test suite:
+
+```ruby
+require 'mute'
+
+describe MyLogger do
+  it 'prints the message to standard out' do
+    message = 'Hello World!'
+
+    output = Mute::IO.capture_stdout do
+      MyLogger.new.print message
+    end
+
+    expect(output).to include message
+  end
+end
+```
 
 ## Installation
 
