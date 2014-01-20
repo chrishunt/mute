@@ -12,13 +12,12 @@ describe Mute::IO do
     end
 
     it 'captures stdout' do
-      message = 'hello'
-
       output = described_class.capture_stdout do
-        puts message
+        puts 'Hello'
+        puts 'World!'
       end
 
-      expect(output).to include message
+      expect(output).to eq "Hello\nWorld!\n"
     end
 
     it 'unmutes stdout when done' do
