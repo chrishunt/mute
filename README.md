@@ -4,7 +4,7 @@
 
 ### Muting test suites since 2014
 
-![](https://raw2.github.com/chrishunt/mute/master/screenshot.png)
+![](https://raw.githubusercontent.com/chrishunt/mute/master/screenshot.png)
 
 ## Usage
 
